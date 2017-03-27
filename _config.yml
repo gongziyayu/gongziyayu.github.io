@@ -1,8 +1,8 @@
 # Basic
 title: 古墨香
-subtitle: 手提眼前墨，笔下古时香
-welcome_message: <a href="https://github.com/gongziyayu/gongziyayu.github.io" target="_blank">Download the theme</a>
-description: 古墨香网站是我的作品网站的通口
+subtitle: 手提眼前墨，笔落古时香
+welcome_message: 欢 迎 光 临
+description: 古墨香是我的个人书画网站
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -17,12 +17,12 @@ cover_color: red
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 作品
+    description: 前往作品
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: 友情链接, description: 友情链接, url: ''}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -37,11 +37,11 @@ comment:
     
 # Social
 social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
-    gplus: 107108267983477358170
-    mail: onev@onevcat.com
+    微博: 
+    github:gongziyayu
+    QQ: <a href="tencent://message/?uin=1211095289&Site=&Menu=yes">点击此处与我联系</a>
+    微信: 107108267983477358170
+    mail: gongziyayu@gmail.com
 
 # Google Analytics
 ga:
