@@ -37,13 +37,12 @@ comment:
     
 # Social
 social:
-	weibo: 古墨香
-	github: gongziyayu
-	QQ: 1211095289
-	weichart: gongziyayu
-	gplus: 107108267983477358170 
-	mail: gongziyayu@gmail.com
-
+    weibo: 古墨香
+    github: gongziyayu
+    QQ: 1211095289
+    weichart: gongziyayu
+    gplus: 107108267983477358170
+    mail: gongziyayu@gmail.com
 # Google Analytics
 ga:
     # id: your_ga_id
