@@ -1,4 +1,19 @@
 <section class="read-more">
+	{% if page.previous %}
+   {% assign current = page.previous %}
+   <div class="read-more-item">
+       <span class="read-more-item-dim"><<上一篇</span>
+       <h2 class="post-list__post-title post-title"><a href="{{ current.url }}" title="前往{{ current.title }}">{{ current.title }}</a></h2>
+       <div class="post-list__meta"><time datetime="{{current.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{current.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{current.tags}}</span></div>
+   </div>
+   <% else %>
+   <div class="read-more-item">
+       <span class="read-more-item-dim">没有了</span>
+   </div>
+   {% endif %}
+	<div class="read-more-item">
+       <h2 class="post-list__post-title post-title"><a href="/#blog" title="前往列表">作品列表</a></h2>
+   </div>
    {% if page.next %}
    {% assign current = page.next %}
    <div class="read-more-item">
@@ -6,13 +21,10 @@
        <h2 class="post-list__post-title post-title"><a href="{{ current.url }}" title="前往{{ current.title }}">{{ current.title }}</a></h2>
        <div class="post-list__meta"><time datetime="{{current.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{current.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{current.tags}}</span></div>
    </div>
-   {% endif %}
-   {% if page.previous %}
-   {% assign current = page.previous %}
+   <% else %>
    <div class="read-more-item">
-       <span class="read-more-item-dim"><<上一篇</span>
-       <h2 class="post-list__post-title post-title"><a href="{{ current.url }}" title="前往{{ current.title }}">{{ current.title }}</a></h2>
-       <div class="post-list__meta"><time datetime="{{current.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{current.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{current.tags}}</span></div>
+       <span class="read-more-item-dim">没有了</span>
    </div>
    {% endif %}
+   
 </section>
